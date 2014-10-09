@@ -96,6 +96,27 @@ namespace _12_Arrays
             }
 
 
+            // Een string is een array van char elementen. Je kunt het does
+            string test = @"Hallo";
+            foreach (char letter in test)
+            {
+                Console.Write(letter);
+            }
+            Console.WriteLine("\n============================================================");
+            char[] woord43 = new char[50];
+            string langWoord = "arbeidsongeschiktheidsverzekeringsformulier";
+            for (int i=0; i<langWoord.Length; i++)
+            {
+                woord43[i] = langWoord[i];
+            }
+
+            foreach (char letter in woord43)
+            {
+                Console.Write(letter);
+            }
+
+
+
             Console.ReadLine();
         }
     }
